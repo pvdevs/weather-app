@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.scss" />
     <script type="module" src="./main.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>weather app</title>
@@ -12,9 +12,24 @@
       <div id="content">
         <input type="text" id="search" placeholder="Search city" />
         <div id="weather">
-          <div id="weather-sky">
-            <span id="weather-sky-text">Holdin onn</span>
-            <span id="weather-sky-icon"></span>
+          <div id="top">
+            <div id="weather-sky">
+              <span id="weather-sky-text">Holdin onn</span>
+              <span id="weather-sky-icon"></span>
+            </div>
+            <span id="city">City, State</span>
+          </div>
+          <div id="bottom">
+            <div id="left">
+              <span id="temperature">32</span>
+              <span id="metric">°C</span>
+            </div>
+            <div id="separator"></div>
+            <div id="right">
+              <span id="feels-like">Feels Like:</span>
+              <span id="wind">Wind:</span>
+              <span id="humidity">Humidity</span>
+            </div>
           </div>
         </div>
       </div>
