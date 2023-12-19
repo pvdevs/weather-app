@@ -46,12 +46,22 @@ $primary-color: #fff;
 
 #weather-sky {
   display: flex;
+  align-items: center;
+  gap: 8px;
 
   #weather-sky-text {
     font-size: 1.5rem;
     color: $primary-color;
   }
 
+  #weather-sky-icon {
+    height: 48px;
+    width: 48px;
+  }
+
+  #weather-sky-icon img {
+    @extend #weather-sky-icon;
+  }
   // Still need to put the icons here!
 }
 
